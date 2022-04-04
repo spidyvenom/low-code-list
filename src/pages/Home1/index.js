@@ -3,11 +3,17 @@ import React from "react";
 import { Column } from "components/Column";
 import { Stack } from "components/Stack";
 import { Row } from "components/Row";
+import { Button } from "components/Button";
 import { Image } from "components/Image";
+import { CheckBox } from "components/CheckBox";
 import { Text } from "components/Text";
 import { List } from "components/List";
 
 const Home1Page = () => {
+  const handleNavigate1 = () => {
+    window.location.href = "http://google.com";
+  };
+
   return (
     <Column className="bg-gray_100 items-center justify-start ml-[auto] mr-[auto] w-[100%]">
       <Stack className="2xl:h-[947px] 2xl:mr-[28px] 3xl:h-[1136px] 3xl:mr-[34px] h-[1015px] lg:h-[736px] lg:mr-[22px] mr-[31px] w-[98%] xl:h-[842px] xl:mr-[25px]">
@@ -16,50 +22,16 @@ const Home1Page = () => {
             <Column className="">
               <Column className="2xl:mb-[18px] 2xl:mr-[23px] 2xl:mt-[75px] 3xl:mb-[22px] 3xl:mr-[28px] 3xl:mt-[90px] justify-start lg:mb-[14px] lg:mr-[18px] lg:mt-[58px] mb-[20px] mr-[25.55px] mt-[81px] w-[68%] xl:mb-[16px] xl:mr-[21px] xl:mt-[67px]">
                 <Stack className="2xl:h-[26px] 3xl:h-[31px] h-[27.449997px] lg:h-[20px] self-stretch w-[100%] xl:h-[23px]">
-                  <Image
-                    src="img_iconhomel.svg"
-                    className="2xl:h-[26px] 2xl:left-[9px] 2xl:w-[25px] 3xl:h-[31px] 3xl:left-[11px] 3xl:w-[30px] absolute h-[27.45px] left-[10px] lg:h-[20px] lg:left-[7px] lg:w-[19px] object-contain w-[27.45px] xl:h-[23px] xl:left-[8px] xl:w-[22px]"
-                    alt="IconHomeL"
-                  />
+                  <Button className="2xl:left-[9px] 3xl:left-[11px] absolute bg-transparent border-bw left-[10px] lg:left-[7px] w-[50%] xl:left-[8px]">
+                    {""}
+                  </Button>
                 </Stack>
                 <Column className="2xl:mt-[35px] 3xl:mt-[42px] items-center lg:mt-[27px] mt-[38.33px] self-stretch w-[100%] xl:mt-[31px]">
                   <Row className="items-center justify-between px-[0] self-stretch w-[100%]">
                     <div className="2xl:h-[48px] 3xl:h-[58px] bg-blue_500 h-[51.09px] lg:h-[38px] rounded-bl-[0] rounded-br-[4px] rounded-tl-[0] rounded-tr-[4px] w-[10%] xl:h-[43px]"></div>
-                    <Stack className="2xl:h-[26px] 2xl:mb-[12px] 2xl:mt-[9px] 2xl:w-[25px] 3xl:h-[31px] 3xl:mb-[15px] 3xl:mt-[11px] 3xl:w-[30px] h-[27px] lg:h-[20px] lg:mb-[9px] lg:mt-[7px] lg:w-[19px] mb-[13.610001px] mr-[1px] mt-[10.479996px] w-[27px] xl:h-[23px] xl:mb-[11px] xl:mt-[8px] xl:w-[22px]">
-                      <Image
-                        src="defaultNoData.png"
-                        className="2xl:h-[26px] 2xl:w-[25px] 3xl:h-[31px] 3xl:w-[30px] absolute h-[27px] inset-[0] lg:h-[20px] lg:w-[19px] object-cover opacity-0 self-stretch w-[27px] xl:h-[23px] xl:w-[22px]"
-                        alt="24ptBoundingB"
-                      />
-                      <Stack className="2xl:h-[20px] 3xl:h-[24px] absolute h-[20.589996px] inset-[0] justify-center lg:h-[15px] m-[auto] w-[76%] xl:h-[18px]">
-                        <Stack className="2xl:h-[20px] 3xl:h-[24px] absolute h-[20.59px] inset-[0] lg:h-[15px] self-stretch w-[100%] xl:h-[18px]">
-                          <Image
-                            src="defaultNoData.png"
-                            className="2xl:h-[20px] 3xl:h-[24px] absolute h-[20.59px] inset-[0] lg:h-[15px] object-cover self-stretch w-[100%] xl:h-[18px]"
-                            alt="Path"
-                          />
-                          <Stack className="2xl:h-[20px] 3xl:h-[24px] absolute bg-gray_400 h-[20.59px] inset-[0] lg:h-[15px] self-stretch w-[100%] xl:h-[18px]">
-                            <Image
-                              src="img_path.svg"
-                              className="2xl:bottom-[7px] 2xl:h-[3px] 2xl:inset-x-[6px] 2xl:top-[9px] 3xl:bottom-[8px] 3xl:h-[3px] 3xl:inset-x-[7px] 3xl:top-[11px] absolute bottom-[8.01001px] h-[2.29px] left-[6.84px] lg:bottom-[5px] lg:h-[2px] lg:inset-x-[4px] lg:top-[7px] object-contain right-[6.869999px] top-[10.289993px] w-[33%] xl:bottom-[6px] xl:h-[2px] xl:inset-x-[5px] xl:top-[8px]"
-                              alt="Path"
-                            />
-                          </Stack>
-                        </Stack>
-                        <Column className="absolute h-[max-content] inset-[0] items-center justify-center m-[auto] w-[78%]">
-                          <Image
-                            src="defaultNoData.png"
-                            className="2xl:h-[3px] 3xl:h-[3px] h-[2.29px] lg:h-[2px] object-cover self-stretch w-[100%] xl:h-[2px]"
-                            alt="Path"
-                          />
-                          <Image
-                            src="defaultNoData.png"
-                            className="2xl:h-[11px] 2xl:mt-[2px] 3xl:h-[13px] 3xl:mt-[2px] h-[11.44px] lg:h-[9px] lg:mt-[1px] mt-[2.280014px] mx-[1px] object-contain w-[86%] xl:h-[10px] xl:mt-[1px]"
-                            alt="Path"
-                          />
-                        </Column>
-                      </Stack>
-                    </Stack>
+                    <Button className="2xl:mb-[12px] 2xl:mt-[9px] 3xl:mb-[15px] 3xl:mt-[11px] bg-transparent border-bw lg:mb-[9px] lg:mt-[7px] mb-[13.610001px] mr-[1px] mt-[10.479996px] w-[50%] xl:mb-[11px] xl:mt-[8px]">
+                      {""}
+                    </Button>
                   </Row>
                 </Column>
                 <Column className="2xl:mt-[33px] 3xl:mt-[39px] items-end lg:mt-[25px] mt-[35.65001px] self-stretch w-[100%] xl:mt-[29px]">
@@ -90,11 +62,12 @@ const Home1Page = () => {
           <Column className="2xl:mb-[406px] 2xl:ml-[24px] 2xl:mr-[63px] 2xl:mt-[170px] 3xl:mb-[487px] 3xl:ml-[29px] 3xl:mr-[76px] 3xl:mt-[204px] bg-white_A700_00 items-center justify-center lg:mb-[316px] lg:ml-[18px] lg:mr-[49px] lg:mt-[132px] mb-[436px] ml-[26px] mr-[68px] mt-[183px] shadow-bs w-[85%] xl:mb-[361px] xl:ml-[21px] xl:mr-[56px] xl:mt-[151px]">
             <Stack className="2xl:h-[64px] 2xl:mt-[49px] 3xl:h-[77px] 3xl:mt-[59px] bg-white_A700 h-[68.54001px] lg:h-[50px] lg:mt-[38px] mt-[53.309998px] self-stretch w-[100%] xl:h-[57px] xl:mt-[44px]">
               <Row className="absolute font-inter h-[max-content] inset-[0] items-center justify-center m-[auto] w-[97%]">
-                <Image
-                  src="img_lefticon.svg"
-                  className="2xl:h-[23px] 2xl:my-[14px] 2xl:w-[22px] 3xl:h-[27px] 3xl:my-[17px] 3xl:w-[26px] h-[24px] lg:h-[18px] lg:my-[11px] lg:w-[17px] my-[16px] object-contain w-[24px] xl:h-[20px] xl:my-[13px] xl:w-[19px]"
-                  alt="LeftIcon"
-                />
+                <CheckBox
+                  className="2xl:my-[14px] 3xl:my-[17px] lg:my-[11px] my-[16px] w-[2%] xl:my-[13px]"
+                  inputClassName=" mr-[5px]"
+                  name="LeftIcon"
+                  label={""}
+                ></CheckBox>
                 <Column className="2xl:ml-[14px] 2xl:my-[11px] 3xl:ml-[17px] 3xl:my-[13px] bg-white_A700_00 items-center justify-start lg:ml-[11px] lg:my-[8px] ml-[16px] my-[12px] rounded-radius50 shadow-bs1 w-[3%] xl:ml-[13px] xl:my-[9px]">
                   <Column className="bg-white_A700 items-center justify-start rounded-radius50 self-stretch w-[100%]">
                     <Image
@@ -161,11 +134,12 @@ const Home1Page = () => {
               <Column className="items-center justify-start my-[0] self-stretch w-[100%]">
                 <Stack className="2xl:h-[64px] 3xl:h-[77px] bg-gray_50 h-[68.54001px] lg:h-[50px] self-stretch w-[100%] xl:h-[57px]">
                   <Row className="absolute font-inter h-[max-content] inset-[0] items-center justify-center m-[auto] w-[97%]">
-                    <Image
-                      src="img_lefticon.svg"
-                      className="2xl:h-[23px] 2xl:my-[14px] 2xl:w-[22px] 3xl:h-[27px] 3xl:my-[17px] 3xl:w-[26px] h-[24px] lg:h-[18px] lg:my-[11px] lg:w-[17px] my-[16px] object-contain w-[24px] xl:h-[20px] xl:my-[13px] xl:w-[19px]"
-                      alt="LeftIcon"
-                    />
+                    <CheckBox
+                      className="2xl:my-[14px] 3xl:my-[17px] lg:my-[11px] my-[16px] w-[2%] xl:my-[13px]"
+                      inputClassName=" mr-[5px]"
+                      name="LeftIcon"
+                      label={""}
+                    ></CheckBox>
                     <Column className="2xl:ml-[14px] 2xl:my-[11px] 3xl:ml-[17px] 3xl:my-[13px] bg-white_A700_00 items-center justify-start lg:ml-[11px] lg:my-[8px] ml-[16px] my-[12px] rounded-radius50 shadow-bs1 w-[3%] xl:ml-[13px] xl:my-[9px]">
                       <Column className="bg-white_A700 items-center justify-start rounded-radius50 self-stretch w-[100%]">
                         <Image
@@ -227,11 +201,12 @@ const Home1Page = () => {
                 </Stack>
                 <Stack className="2xl:h-[64px] 3xl:h-[77px] bg-white_A700 h-[68.54001px] lg:h-[50px] self-stretch w-[100%] xl:h-[57px]">
                   <Row className="absolute font-inter h-[max-content] inset-[0] items-center justify-center m-[auto] w-[97%]">
-                    <Image
-                      src="img_lefticon.svg"
-                      className="2xl:h-[23px] 2xl:my-[14px] 2xl:w-[22px] 3xl:h-[27px] 3xl:my-[17px] 3xl:w-[26px] h-[24px] lg:h-[18px] lg:my-[11px] lg:w-[17px] my-[16px] object-contain w-[24px] xl:h-[20px] xl:my-[13px] xl:w-[19px]"
-                      alt="LeftIcon"
-                    />
+                    <CheckBox
+                      className="2xl:my-[14px] 3xl:my-[17px] lg:my-[11px] my-[16px] w-[2%] xl:my-[13px]"
+                      inputClassName=" mr-[5px]"
+                      name="LeftIcon"
+                      label={""}
+                    ></CheckBox>
                     <Column className="2xl:ml-[14px] 2xl:my-[11px] 3xl:ml-[17px] 3xl:my-[13px] bg-white_A700_00 items-center justify-start lg:ml-[11px] lg:my-[8px] ml-[16px] my-[12px] rounded-radius50 shadow-bs1 w-[3%] xl:ml-[13px] xl:my-[9px]">
                       <Column className="bg-white_A700 items-center justify-start rounded-radius50 self-stretch w-[100%]">
                         <Image
@@ -295,11 +270,12 @@ const Home1Page = () => {
               <Column className="items-center justify-start my-[0] self-stretch w-[100%]">
                 <Stack className="2xl:h-[64px] 3xl:h-[77px] bg-gray_50 h-[68.54001px] lg:h-[50px] self-stretch w-[100%] xl:h-[57px]">
                   <Row className="absolute font-inter h-[max-content] inset-[0] items-center justify-center m-[auto] w-[97%]">
-                    <Image
-                      src="img_lefticon.svg"
-                      className="2xl:h-[23px] 2xl:my-[14px] 2xl:w-[22px] 3xl:h-[27px] 3xl:my-[17px] 3xl:w-[26px] h-[24px] lg:h-[18px] lg:my-[11px] lg:w-[17px] my-[16px] object-contain w-[24px] xl:h-[20px] xl:my-[13px] xl:w-[19px]"
-                      alt="LeftIcon"
-                    />
+                    <CheckBox
+                      className="2xl:my-[14px] 3xl:my-[17px] lg:my-[11px] my-[16px] w-[2%] xl:my-[13px]"
+                      inputClassName=" mr-[5px]"
+                      name="LeftIcon"
+                      label={""}
+                    ></CheckBox>
                     <Column className="2xl:ml-[14px] 2xl:my-[11px] 3xl:ml-[17px] 3xl:my-[13px] bg-white_A700_00 items-center justify-start lg:ml-[11px] lg:my-[8px] ml-[16px] my-[12px] rounded-radius50 shadow-bs1 w-[3%] xl:ml-[13px] xl:my-[9px]">
                       <Column className="bg-white_A700 items-center justify-start rounded-radius50 self-stretch w-[100%]">
                         <Image
@@ -361,11 +337,12 @@ const Home1Page = () => {
                 </Stack>
                 <Stack className="2xl:h-[64px] 3xl:h-[77px] bg-white_A700 h-[68.54001px] lg:h-[50px] self-stretch w-[100%] xl:h-[57px]">
                   <Row className="absolute font-inter h-[max-content] inset-[0] items-center justify-center m-[auto] w-[97%]">
-                    <Image
-                      src="img_lefticon.svg"
-                      className="2xl:h-[23px] 2xl:my-[14px] 2xl:w-[22px] 3xl:h-[27px] 3xl:my-[17px] 3xl:w-[26px] h-[24px] lg:h-[18px] lg:my-[11px] lg:w-[17px] my-[16px] object-contain w-[24px] xl:h-[20px] xl:my-[13px] xl:w-[19px]"
-                      alt="LeftIcon"
-                    />
+                    <CheckBox
+                      className="2xl:my-[14px] 3xl:my-[17px] lg:my-[11px] my-[16px] w-[2%] xl:my-[13px]"
+                      inputClassName=" mr-[5px]"
+                      name="LeftIcon"
+                      label={""}
+                    ></CheckBox>
                     <Column className="2xl:ml-[14px] 2xl:my-[11px] 3xl:ml-[17px] 3xl:my-[13px] bg-white_A700_00 items-center justify-start lg:ml-[11px] lg:my-[8px] ml-[16px] my-[12px] rounded-radius50 shadow-bs1 w-[3%] xl:ml-[13px] xl:my-[9px]">
                       <Column className="bg-white_A700 items-center justify-start rounded-radius50 self-stretch w-[100%]">
                         <Image
@@ -435,36 +412,43 @@ const Home1Page = () => {
               <Column className="justify-start self-stretch w-[100%]">
                 <Column className="items-center self-stretch w-[100%]">
                   <Stack className="2xl:h-[231px] 3xl:h-[277px] font-oxygen h-[247px] lg:h-[180px] self-stretch w-[100%] xl:h-[205px]">
+                    <Text className="2xl:leading-lh26 2xl:text-fs14 3xl:leading-lh31 3xl:text-fs17 absolute bottom-[0] font-normal leading-lh2800 lg:leading-lh20 lg:text-fs11 right-[0] text-fs16 text-gray_600 text-left w-[25%] xl:leading-lh23 xl:text-fs13">{`Did you know that you will be able to syncronise your lead information via. active analytics. Use our pathbreaker.js to integrate and hydrate activily for the most upto date data.`}</Text>
                     <header className="absolute self-stretch top-[0] w-[100%]">
                       <Row className="items-center justify-between px-[0] self-stretch w-[100%]">
                         <Column className="font-inter justify-start w-[72%]">
                           <Text className="2xl:mr-[9px] 2xl:text-fs29 3xl:mr-[11px] 3xl:text-fs35 font-bold lg:mr-[7px] lg:text-fs23 mr-[10px] text-fs32 text-gray_901 text-left xl:mr-[8px] xl:text-fs26">{`Nurtured Leads`}</Text>
                           <Column className="2xl:mt-[10px] 3xl:mt-[12px] items-center lg:mt-[7px] mt-[11px] self-stretch w-[100%] xl:mt-[9px]">
                             <Row className="2xl:gap-[12px] 2xl:pr-[631px] 3xl:gap-[14px] 3xl:pr-[757px] gap-[13px] grid grid-cols-3 items-center justify-start lg:gap-[9px] lg:pr-[490px] pr-[677px] self-stretch w-[100%] xl:gap-[10px] xl:pr-[561px]">
-                              <Stack className="2xl:h-[38px] 3xl:h-[45px] font-inter h-[40px] lg:h-[29px] mb-[1px] w-[100%] xl:h-[34px]">
+                              <div className="bg-transparent border-bw mb-[1px] w-[100%] input-wrap">
                                 <Image
                                   src="img_shape.svg"
-                                  className="2xl:h-[38px] 3xl:h-[45px] absolute h-[40px] inset-[0] lg:h-[29px] object-cover self-stretch w-[100%] xl:h-[34px]"
+                                  className="absolute border-bw bg-transparent my-[0] mx-[auto] inset-y-[0]"
                                   alt="Shape"
                                 />
-                                <Text className="2xl:text-fs14 3xl:text-fs17 absolute font-bold h-[max-content] inset-[0] justify-center lg:text-fs11 m-[auto] text-blue_500 text-center text-fs16 w-[max-content] xl:text-fs13">{`+ New`}</Text>
-                              </Stack>
-                              <Stack className="2xl:h-[38px] 3xl:h-[45px] font-inter h-[40px] lg:h-[29px] mt-[1px] w-[100%] xl:h-[34px]">
+                                <Button className="2xl:pr-[96px] 3xl:pr-[116px] bg-transparent border-bw lg:pr-[75px] pr-[104px] w-[100%] xl:pr-[86px]">
+                                  {""}
+                                </Button>
+                              </div>
+                              <div className="bg-transparent border-bw mt-[1px] w-[100%] input-wrap">
                                 <Image
                                   src="img_shape.svg"
-                                  className="2xl:h-[38px] 3xl:h-[45px] absolute h-[40px] inset-[0] lg:h-[29px] object-cover self-stretch w-[100%] xl:h-[34px]"
+                                  className="absolute border-bw bg-transparent my-[0] mx-[auto] inset-y-[0]"
                                   alt="Shape"
                                 />
-                                <Text className="2xl:text-fs14 3xl:text-fs17 absolute font-bold h-[max-content] inset-[0] justify-center lg:text-fs11 m-[auto] text-blue_500 text-center text-fs16 w-[max-content] xl:text-fs13">{`Sort`}</Text>
-                              </Stack>
-                              <Stack className="2xl:h-[38px] 3xl:h-[45px] font-inter h-[40px] lg:h-[29px] mt-[1px] w-[100%] xl:h-[34px]">
+                                <Button className="2xl:pr-[96px] 3xl:pr-[116px] bg-transparent border-bw lg:pr-[75px] pr-[104px] w-[100%] xl:pr-[86px]">
+                                  {""}
+                                </Button>
+                              </div>
+                              <div className="bg-transparent border-bw mt-[1px] w-[100%] input-wrap">
                                 <Image
                                   src="img_shape.svg"
-                                  className="2xl:h-[38px] 3xl:h-[45px] absolute h-[40px] inset-[0] lg:h-[29px] object-cover self-stretch w-[100%] xl:h-[34px]"
+                                  className="absolute border-bw bg-transparent my-[0] mx-[auto] inset-y-[0]"
                                   alt="Shape"
                                 />
-                                <Text className="2xl:text-fs14 3xl:text-fs17 absolute font-bold h-[max-content] inset-[0] justify-center lg:text-fs11 m-[auto] text-blue_500 text-center text-fs16 w-[max-content] xl:text-fs13">{`Delete`}</Text>
-                              </Stack>
+                                <Button className="2xl:pr-[96px] 3xl:pr-[116px] bg-transparent border-bw lg:pr-[75px] pr-[104px] w-[100%] xl:pr-[86px]">
+                                  {""}
+                                </Button>
+                              </div>
                             </Row>
                             <Row className="2xl:mt-[35px] 3xl:mt-[42px] bg-gray_100 font-inter items-center justify-start lg:mt-[27px] mt-[38px] self-stretch w-[100%] xl:mt-[31px]">
                               <Image
@@ -489,7 +473,6 @@ const Home1Page = () => {
                         </Column>
                       </Row>
                     </header>
-                    <Text className="2xl:leading-lh26 2xl:text-fs14 3xl:leading-lh31 3xl:text-fs17 absolute bottom-[0] font-normal leading-lh2800 lg:leading-lh20 lg:text-fs11 right-[0] text-fs16 text-gray_600 text-left w-[25%] xl:leading-lh23 xl:text-fs13">{`Did you know that you will be able to syncronise your lead information via. active analytics. Use our pathbreaker.js to integrate and hydrate activily for the most upto date data.`}</Text>
                   </Stack>
                 </Column>
                 <Stack className="2xl:h-[30px] 2xl:ml-[986px] 2xl:mt-[14px] 3xl:h-[36px] 3xl:ml-[1184px] 3xl:mt-[17px] font-inter h-[32px] lg:h-[24px] lg:ml-[766px] lg:mt-[11px] ml-[1058px] mt-[16px] w-[25%] xl:h-[27px] xl:ml-[877px] xl:mt-[13px]">
@@ -498,7 +481,10 @@ const Home1Page = () => {
                     className="2xl:h-[15px] 2xl:left-[37px] 2xl:w-[14px] 3xl:h-[18px] 3xl:left-[44px] 3xl:w-[17px] absolute h-[16px] inset-y-[0] left-[40px] lg:h-[12px] lg:left-[28px] lg:w-[11px] my-[auto] object-contain w-[16px] xl:h-[14px] xl:left-[33px] xl:w-[13px]"
                     alt="IconArrowFo"
                   />
-                  <Text className="2xl:text-fs13 3xl:text-fs15 absolute font-bold h-[max-content] inset-y-[0] left-[0] lg:text-fs10 my-[auto] text-blue_500 text-fs14 text-left xl:text-fs11">{`READ More`}</Text>
+                  <Text
+                    className="common-pointer 2xl:text-fs13 3xl:text-fs15 absolute font-bold h-[max-content] inset-y-[0] left-[0] lg:text-fs10 my-[auto] text-blue_500 text-fs14 text-left xl:text-fs11"
+                    onClick={handleNavigate1}
+                  >{`READ More`}</Text>
                 </Stack>
               </Column>
             </div>

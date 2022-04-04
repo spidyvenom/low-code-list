@@ -1,5 +1,3 @@
-Missing images: 4
-
 # Design System
 
 All the design has been generated with [tailwindcss](https://tailwindcss.com/).

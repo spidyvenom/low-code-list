@@ -11,7 +11,6 @@ module.exports = {
       colors: {
         gray_600: "#757575",
         white_A700_00: "#ffffff00",
-        gray_400: "#bdbdbd",
         bluegray_900_1a: "#3030331a",
         gray_901: "#212121",
         blue_500: "#1e90ff",
@@ -20,6 +19,7 @@ module.exports = {
         gray_50: "#fcfcfc",
         gray_100: "#f5f5f5",
       },
+      borderWidth: { bw: "none" },
       boxShadow: {
         bs1: "0px 2px  4px 0px #3030331a",
         bs: "0px 16px  24px 0px #3030331a",
